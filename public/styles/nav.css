@@ -1,0 +1,32 @@
+/* Layout for nav */
+nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 120px;
+  width: 100%;
+  background-color: #4056A1;
+  color: #FFFFFF;
+  padding-left: 1.5em;
+  padding-right: 1.5em;
+} 
+
+.logo {
+  font-family: "Bungee", sans-serif;
+}
+
+ .tweet {
+  display: flex;
+  flex-direction: column;
+}
+
+.bold {
+  font-weight: 600;
+}
+
+.sign {
+  display: flex;
+  align-self: center;
+  color: red;
+
+}

@@ -1,0 +1,35 @@
+.new-tweet {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2em;
+}
+
+textarea {
+  outline: 0;
+  resize: none;
+  border-width: 0 0 4px;
+  border-color: #545149;
+  background-color: #f4f1ec;
+  background-image: url("https://www.transparenttextures.com/patterns/back-pattern.png");
+  width:100%
+  
+  
+}
+
+.submit {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-family: "Bungee", sans-serif;
+}
+button {
+  display: flex;
+  background-color: #4056A1;
+  color: #FFFFFF;
+  
+  
+}
+
+.counter {
+  display: flex;
+}
