@@ -29,6 +29,9 @@ body {
 /*
  * Additional CSS can be defined below or in other CSS files, as per instructions
  */
+header{
+  margin-top: 120px;
+}
  .container {
   width: 90%;
  }
@@ -44,6 +47,7 @@ body {
  }
  article.tweets header {
   height: auto;
+  margin-top: auto;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
