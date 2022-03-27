@@ -17,7 +17,7 @@ nav{
   font-family: "Bungee", sans-serif;
 }
 
- .tweet {
+ .tweet-logo {
   display: flex;
   flex-direction: column;
 }

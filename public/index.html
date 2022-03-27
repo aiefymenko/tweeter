@@ -7,6 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Source+Sans+Pro:ital,wght@0,300;0,600;1,300;1,600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
     <!-- Meta Information -->
     <title>Tweeter - Home Page</title>
@@ -24,14 +25,15 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
     <!-- App JS -->
-    <script type="text/javascript" src="/scripts/client.js"></script>
+    <script src="/scripts/composer-char-counter.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/timeago.js/4.0.2/timeago.min.js"></script> 
   </head>
 
   <body>
     <!-- Top nav bar (fixed) -->
     <nav>
       <span class="logo">tweeter</span>
-     <div class="tweet"> 
+     <div class="tweet-logo"> 
        <div><span class="bold"> Write </span> a new tweet </div>
         <i class="fa-solid fa-angles-down sign"></i>
      </div>
@@ -47,8 +49,18 @@
     <!-- Page-specific (main) content here -->  
     <main class="container">
       <section class="new-tweet">
+        <span class="error-length"> 
+          <i class="material-icons" style="font-size:48px;color:red">warning</i>
+          Please reduce the tweet length. Maximum allowed length is 140 symbols.
+          <i class="material-icons" style="font-size:48px;color:red">warning</i>
+        </span>
+        <span class="error-empty">
+        <i class="material-icons" style="font-size:48px;color:red">warning</i>
+        You forgot to type something interesting. Be creative!
+        <i class="material-icons" style="font-size:48px;color:red">warning</i>
+      </span>
         <h2>Compose Tweet</h2>
-        <form method="POST" action="/tweets">
+        <form id="tweet-submit" method="POST" action="/tweets">
           <label for="tweet-text" class="bold">What are you humming about?</label>
           <textarea name="text" id="tweet-text"></textarea>
           <div class="submit">
@@ -57,18 +69,9 @@
           </div>
         </form>
       </section>
-      <article class="tweets">
-        <header>
-          <h2> <i class="fa-solid fa-poo"></i> Newton </h2>
-          <span> @SirIssaak </span>
-        </header>
-        <p>Here is an image to use as a reference. Aim to make your tweet look like the one in the image.</p>
-        <footer>
-          <span>10 days ago</span>
-          <div class="footer-logo"><i class="fa-solid fa-flag"></i> <i class="fa-solid fa-retweet"></i> <i class="fa-solid fa-heart"></i></div>
-        </footer>
-      </article>
+      <div id="tweets-container">
+      </div>
     </main>
-    <script src="/scripts/composer-char-counter.js"></script>
+    <script type="text/javascript" src="/scripts/client.js"></script>
   </body>
 </html>
