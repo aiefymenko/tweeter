@@ -2,66 +2,92 @@
 <html lang="en">
   <head>
     <!--Font Awesome icons library-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css" integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css"
+      integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <!--Bungee font + Source Sans Pro 300 and 600 regular and italic-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Source+Sans+Pro:ital,wght@0,300;0,600;1,300;1,600&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bungee&family=Source+Sans+Pro:ital,wght@0,300;0,600;1,300;1,600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
 
     <!-- Meta Information -->
     <title>Tweeter - Home Page</title>
 
     <!-- External CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" type="text/css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+      type="text/css"
+    />
 
     <!-- App CSS -->
-    <link rel="stylesheet" href="/styles/layout.css" type="text/css" />
     <link rel="stylesheet" href="/styles/nav.css" type="text/css" />
     <link rel="stylesheet" href="/styles/header.css" type="text/css" />
     <link rel="stylesheet" href="/styles/new-tweet.css" type="text/css" />
+    <link rel="stylesheet" href="/styles/layout.css" type="text/css" />
 
     <!-- External JS -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
     <!-- App JS -->
     <script src="/scripts/composer-char-counter.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/timeago.js/4.0.2/timeago.min.js"></script> 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/timeago.js/4.0.2/timeago.min.js"></script>
   </head>
 
   <body>
     <!-- Top nav bar (fixed) -->
     <nav>
       <span class="logo">tweeter</span>
-     <div class="tweet-logo"> 
-       <div><span class="bold"> Write </span> a new tweet </div>
+      <div class="tweet-logo">
+        <div><span class="bold"> Write </span> a new tweet</div>
         <i class="fa-solid fa-angles-down sign"></i>
-     </div>
+      </div>
     </nav>
+    <div class="query">
     <header>
       <div class="logo">
-          <img src="/images/profile-hex.png"> 
+        <img src="/images/profile-hex.png" />
       </div>
       <div class="name">
-          <h2><span class="bold">Your</span> Name</h2>
+        <h2><span class="bold">Your</span> Name</h2>
       </div>
-  </header>
-    <!-- Page-specific (main) content here -->  
+    </header>
+    <!-- Page-specific (main) content here -->
     <main class="container">
       <section class="new-tweet">
-        <span class="error-length"> 
-          <i class="material-icons" style="font-size:48px;color:red">warning</i>
+        <span class="error-length">
+          <i class="material-icons" style="font-size: 48px; color: red"
+            >warning</i
+          >
           Please reduce the tweet length. Maximum allowed length is 140 symbols.
-          <i class="material-icons" style="font-size:48px;color:red">warning</i>
+          <i class="material-icons" style="font-size: 48px; color: red"
+            >warning</i
+          >
         </span>
         <span class="error-empty">
-        <i class="material-icons" style="font-size:48px;color:red">warning</i>
-        You forgot to type something interesting. Be creative!
-        <i class="material-icons" style="font-size:48px;color:red">warning</i>
-      </span>
-        <h2>Compose Tweet</h2>
+          <i class="material-icons" style="font-size: 48px; color: red"
+            >warning</i
+          >
+          You forgot to type something interesting. Be creative!
+          <i class="material-icons" style="font-size: 48px; color: red"
+            >warning</i
+          >
+        </span>
         <form id="tweet-submit" method="POST" action="/tweets">
-          <label for="tweet-text" class="bold">What are you humming about?</label>
+          <label for="tweet-text" class="bold"
+            >What are you humming about?</label
+          >
           <textarea name="text" id="tweet-text"></textarea>
           <div class="submit">
             <button type="submit">Tweet</button>
@@ -69,9 +95,9 @@
           </div>
         </form>
       </section>
-      <div id="tweets-container">
-      </div>
+      <div id="tweets-container"></div>
     </main>
+  </div>
     <script type="text/javascript" src="/scripts/client.js"></script>
   </body>
 </html>
