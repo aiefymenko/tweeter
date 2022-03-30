@@ -29,6 +29,7 @@ body {
 
  .container {
   width: 90%;
+  padding: 20px;
  }
  article.tweet {  
    display:flex;
@@ -124,6 +125,12 @@ body {
     position: relative ;
     background-color:#916d00;
     background-image: url("https://www.transparenttextures.com/patterns/back-pattern.png");
+  }
+  .query main {
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+    width: 100%
   }
 
 }
