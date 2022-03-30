@@ -29,7 +29,8 @@ body {
 
  .container {
   width: 90%;
-  padding: 20px;
+  margin-left: auto;
+  margin-right: auto;
  }
  article.tweet {  
    display:flex;
