@@ -3,17 +3,10 @@
  * jQuery is already loaded
  * Reminder: Use (and do all your DOM work in) jQuery's document ready function
  */
-//const { text } = require("body-parser");
-
-//const { post } = require("request");
 
 $(document).ready(function() {
   $('.error-length').hide(); //hide when no errors
   $('.error-empty').hide();
-
-
-
-
 
 
 const escape = function (str) { //function to avoid cross-site scripting
@@ -51,8 +44,6 @@ const createTweetElement = function(tweet) {
 return $tweet ;  
 };
 
-//renderTweets(data);
-
 
 const loadTweets = () => {
   $.ajax({
@@ -65,8 +56,6 @@ const loadTweets = () => {
   })
 }
  loadTweets();
-
-
 
 $("#tweet-submit").submit(function(event) {
   event.preventDefault();
