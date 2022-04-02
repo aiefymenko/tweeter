@@ -20,3 +20,10 @@ This repository is the starter code for the project: Students will fork and clon
 - Chance: 1.0.2
 - Express: 4.13.4
 - md5: 2.1.0
+
+## Screenshots
+
+!["Box shadow around selected tweet while being on desktop"](https://github.com/aiefymenko/tweeter/blob/450fae26104ebf3dabbd846d4837deab0beef398/docs/box-shadow-on-selected-tweet.png)
+!["Tweet too long while being on desktop"](https://github.com/aiefymenko/tweeter/blob/450fae26104ebf3dabbd846d4837deab0beef398/docs/tweet-too-long-desktop.png)
+!["No tweet error on tablet"](https://github.com/aiefymenko/tweeter/blob/450fae26104ebf3dabbd846d4837deab0beef398/docs/no-tweet-tablet.png)
+!["New tweet on mobile"](https://github.com/aiefymenko/tweeter/blob/450fae26104ebf3dabbd846d4837deab0beef398/docs/new-tweet-mobile.png)
