@@ -32,6 +32,7 @@ body {
   margin-left: auto;
   margin-right: auto;
  }
+
  article.tweet {  
    display:flex;
    flex-direction: column;
@@ -39,9 +40,10 @@ body {
    border-width: thick;
    height:auto;
    padding: 0.7em;
-   margin-bottom: 20px;
-
-   
+   margin-bottom: 20px;   
+ }
+ article.tweet:hover {
+  box-shadow: 5px 10px #888888;
  }
  article.tweet header {
   height: auto;
